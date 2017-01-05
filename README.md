@@ -1,1 +1,0 @@
-# ionic-background-geolocation-example

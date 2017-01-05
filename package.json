@@ -1,7 +1,7 @@
 {
-  "name": "bgionic",
+  "name": "ionic-background-geolocation-example",
   "version": "1.1.1",
-  "description": "bgionic: An Ionic project",
+  "description": "ionic-background-geolocation-example: An Ionic project",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^2.0.4",
@@ -16,11 +16,11 @@
   },
   "cordovaPlugins": [
     "cordova-plugin-whitelist",
-    "cordova-plugin-device",
     "cordova-plugin-statusbar",
-    "cordova-plugin-console",
+    "cordova-plugin-device",
     "cordova-plugin-splashscreen",
-    "ionic-plugin-keyboard"
+    "ionic-plugin-keyboard",
+    "cordova-plugin-console"
   ],
   "cordovaPlatforms": []
 }
