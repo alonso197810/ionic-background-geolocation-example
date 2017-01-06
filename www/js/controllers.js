@@ -47,29 +47,29 @@ angular.module('starter.controllers', [])
       distanceFilter: 50,
       desiredAccuracy: 10,
       debug: false,
-      notificationTitle: 'Background tracking',
-      notificationText: 'enabled',
-      notificationIconColor: '#FEDD1E',
-      notificationIconLarge: 'mappointer_large',
-      notificationIconSmall: 'mappointer_small',
+      //notificationTitle: 'Background tracking',
+      //notificationText: 'enabled',
+      //notificationIconColor: '#FEDD1E',
+      //notificationIconLarge: 'mappointer_large',
+      //notificationIconSmall: 'mappointer_small',
       locationProvider: 0,//backgroundGeolocation.provider.ANDROID_DISTANCE_FILTER_PROVIDER,
       interval: 10000,
       fastestInterval: 5000,
       activitiesInterval: 10000,
       stopOnTerminate: false,
-      startOnBoot: false,
-      startForeground: true,
-      stopOnStillActivity: true,
-      activityType: 'AutomotiveNavigation',
-      url: 'http://192.168.81.15:3000/locations',
-      syncUrl: 'http://192.168.81.15:3000/sync',
-      syncThreshold: 100,
-      httpHeaders: {
+      //startOnBoot: false,
+      //startForeground: true,
+      //stopOnStillActivity: true,
+      activityType: 'AutomotiveNavigation',//iOS
+      //url: 'http://192.168.81.15:3000/locations',
+      //syncUrl: 'http://192.168.81.15:3000/sync',
+      //syncThreshold: 100,
+      /*httpHeaders: {
         'X-FOO': 'bar'
-      },
-      pauseLocationUpdates: false,
-      saveBatteryOnBackground: false,
-      maxLocations: 100
+      },*/
+      pauseLocationUpdates: false,//iOS
+      saveBatteryOnBackground: false,//iOS
+      //maxLocations: 100
     }; 
     function setCurrentLocation (location) {
       var latlng = new google.maps.LatLng(Number(location.latitude), Number(location.longitude));
