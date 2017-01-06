@@ -43,9 +43,9 @@ angular.module('starter.controllers', [])
 
 .controller('PlaylistsCtrl', function($scope) {
     var bgOptions = {
-      stationaryRadius: 50,
-      distanceFilter: 50,
-      desiredAccuracy: 10,
+      stationaryRadius: 25,
+      distanceFilter: 10,
+      desiredAccuracy: 0,
       debug: false,
       //notificationTitle: 'Background tracking',
       //notificationText: 'enabled',
