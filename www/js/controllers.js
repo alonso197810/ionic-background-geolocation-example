@@ -47,17 +47,17 @@ angular.module('starter.controllers', [])
       distanceFilter: 50,
       desiredAccuracy: 10,
       debug: false,
-      /*notificationTitle: 'Background tracking',
+      notificationTitle: 'Background tracking',
       notificationText: 'enabled',
       notificationIconColor: '#FEDD1E',
       notificationIconLarge: 'mappointer_large',
-      notificationIconSmall: 'mappointer_small',*/
+      notificationIconSmall: 'mappointer_small',
       locationProvider: 0,//backgroundGeolocation.provider.ANDROID_DISTANCE_FILTER_PROVIDER,
-      /*interval: 10000,
-      fastestInterval: 5000,
-      activitiesInterval: 10000,*/
-      stopOnTerminate: true,
-      /*startOnBoot: false,
+      interval: 10,
+      fastestInterval: 5,
+      activitiesInterval: 10,
+      stopOnTerminate: false,
+      startOnBoot: false,
       startForeground: true,
       stopOnStillActivity: true,
       activityType: 'AutomotiveNavigation',
@@ -69,8 +69,8 @@ angular.module('starter.controllers', [])
       },
       pauseLocationUpdates: false,
       saveBatteryOnBackground: false,
-      maxLocations: 100*/
-    };  
+      maxLocations: 100
+    }; 
     function setCurrentLocation (location) {
       var latlng = new google.maps.LatLng(Number(location.latitude), Number(location.longitude));
       locationMarkers.push(new google.maps.Marker({
