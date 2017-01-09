@@ -53,22 +53,22 @@ angular.module('starter.controllers', [])
       //notificationIconLarge: 'mappointer_large',
       //notificationIconSmall: 'mappointer_small',
       locationProvider: 0,//backgroundGeolocation.provider.ANDROID_DISTANCE_FILTER_PROVIDER,
-      interval: 10000,
-      fastestInterval: 5000,
-      activitiesInterval: 10000,
-      stopOnTerminate: false,
+      interval: 60000,
+      //fastestInterval: 5000,
+      //activitiesInterval: 10000,
+      //stopOnTerminate: false,
       //startOnBoot: false,
       //startForeground: true,
       //stopOnStillActivity: true,
-      activityType: 'AutomotiveNavigation',//iOS
+      //activityType: 'AutomotiveNavigation',//iOS
       //url: 'http://192.168.81.15:3000/locations',
       //syncUrl: 'http://192.168.81.15:3000/sync',
       //syncThreshold: 100,
       /*httpHeaders: {
         'X-FOO': 'bar'
       },*/
-      pauseLocationUpdates: false,//iOS
-      saveBatteryOnBackground: false,//iOS
+      //pauseLocationUpdates: false,//iOS
+      //saveBatteryOnBackground: false,//iOS
       //maxLocations: 100
     }; 
     function setCurrentLocation (location) {
