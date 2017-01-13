@@ -56,7 +56,7 @@ angular.module('starter.controllers', [])
       interval: 60000,
       //fastestInterval: 5000,
       //activitiesInterval: 10000,
-      //stopOnTerminate: false,
+      stopOnTerminate: false,
       //startOnBoot: false,
       //startForeground: true,
       //stopOnStillActivity: true,
